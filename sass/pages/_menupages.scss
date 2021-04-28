@@ -1,0 +1,82 @@
+.headermenu{
+    display: flex;
+    align-items: center;
+    padding: 1em;
+    img{
+      width: 40%;
+      margin: auto;
+    }
+    i{
+      position: relative;
+    }
+    &+img{
+    object-fit: cover;
+    width: 100%;
+    height: 15rem;
+    }
+  }
+  
+  .main{
+    background-color: rgb(240, 233, 233);
+    border-radius: 2em 2em 0 0;
+    position: relative;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    margin-top: -3em;
+  }
+  
+  .menutitle{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "shrikhand";
+    position: relative;
+  }
+  
+  .menucards{
+    width: 90%;
+    margin: auto;
+    cursor: pointer;
+    h2{
+      text-transform: uppercase;
+      font-size: 1.1em;
+      color: grey;
+      width: 13%;
+      border-bottom: solid 3px #99E2D0;
+      padding-bottom: 0.2em;
+    }
+  }
+  
+  .menucard{
+    &:last-child{
+      margin-bottom: 3em;
+      text-align: left;
+    }
+  }
+  
+  .card{
+    background-color: white;
+    border-radius: 1rem ;
+    margin-bottom: 1em;
+    box-shadow: 1px 1px 10px grey;
+    padding: 0.8em;
+    .accompaniment{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 400;
+    }
+    h3{
+      margin: 0;
+    }
+    p{
+      margin: 0;
+    }
+    span{
+      font-weight: bold;
+    }
+  }
+  

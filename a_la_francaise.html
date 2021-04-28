@@ -3,25 +3,25 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="public/css/style.css"/>
         <script src="https://kit.fontawesome.com/5661425ff3.js" crossorigin="anonymous"></script>
         <title>Ohmyfood - À la française</title>
     </head>
     <body>
         <!-- Header-->
-        <header class="header">
-            <a href="index.html"><i class="fas fa-arrow-left"></i></a>
-            <img src="img/logo/ohmyfood@2x.svg" alt="logo">
+        <header class="headermenu">
+            <a href="index.html"><i class="fas fa-arrow-left fa-lg"></i></a>
+            <img src="public/img/logo/ohmyfood@2x.svg" alt="logo">
         </header>
-        <section class="banniere">
-            <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant">
-        </section>
+        
+        <img src="public/img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="restaurant">
+        
         <main class="main">
             <div class="menutitle">
                 <h1>À la française</h1>
-                <i class="far fa-heart"></i>
+                <i class="far fa-heart fa-2x"></i>
             </div>
-            <section class="menu">
+            <section class="menucards">
                 <h2>Entrées</h2>
                 <div class="menucard">
                     <article class="card">
@@ -47,7 +47,7 @@
                     </article>
                 </div>
             </section>
-            <section class="menu">
+            <section class="menucards">
                 <h2>Plats</h2>
                 <div class="menucard">
                     <article class="card">
@@ -73,7 +73,7 @@
                     </article>
                 </div>
             </section>
-            <section class="menu">
+            <section class="menucards">
                 <h2>Desserts</h2>
                 <div class="menucard">
                     <article class="card">
@@ -99,19 +99,19 @@
                     </article>
                 </div>
             </section>
-            <button class="button">Commander</button>
+            <button class="btncommand">Commander</button>
         </main>
         <!-- Footer-->
         <footer class="footer">
-            <div class="footerlogo">
-                <img src="img/logo/ohmyfood@2x.svg" alt="logo">
-            </div>
-            <div class="footerlist">
-                <ul>
+            <div class="footer__container">
+                <div class="footerlogo">
+                    <h3>ohmyfood</h3>
+                </div>
+                <ul class="footerlist">
                     <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                    <li><a href="#"><i class="fas fa-hands-helping"></i> Devenir partenaire</a></li>
+                    <li><a href="#"><i class="fas fa-hands-helping fa-xs"></i> Devenir partenaire</a></li>
                     <li><a href="#">Mentions légales</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="mailto:contact@ohmyfood.com">Contact</a></li>
                 </ul>
             </div>
         </footer>
