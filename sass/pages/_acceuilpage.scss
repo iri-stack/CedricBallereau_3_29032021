@@ -1,3 +1,43 @@
+.loader {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.9);
+  animation: loader 1.5s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container{
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.container__circle {
+  width: 3em;
+  height: 3em;
+  border-radius: 100%;
+  margin: 2em;
+  animation: bounce 1.5s 0.5s linear infinite;
+  animation-delay: 1.5s;
+  animation-fill-mode: both;
+  &--primary {
+    background-color: $color-primary;
+    animation: bounce 0.3s;
+  }
+  &--secondary {
+    background-color: $color-secondary;
+    animation: bounce 0.5s;
+  }
+  &--tertiaire {
+    background-color: $color-tertiaire;
+    animation: bounce 0.7s;
+  }
+}
+
 /* header */
 
 .header {
@@ -39,8 +79,6 @@
       font-size: 1.2em;
     }
   }
-  
-  
   
   /* section operation */
   
@@ -157,20 +195,6 @@
     figcaption{
       display: flex;
       justify-content: space-between;
-    }
-    .notlike{
-      color: grey;
-      margin: auto;
-      cursor: pointer;
-      &:hover{
-        color: red;
-      }
-    }
-    .liked{
-      opacity: 1;
-      &:hover{
-        color: red;
-      }
     }
   }
   
