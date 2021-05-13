@@ -35,22 +35,26 @@ button:hover {
   height: 15rem;
 }
 
-.lol {
+.menu__heart {
   position: relative;
 }
-
-.notlike {
+.menu__heart--notlike {
   position: absolute;
   color: grey;
 }
-
-.liked {
+.menu__heart--notlike:hover {
+  color: red;
+}
+.menu__heart--liked {
   z-index: 1;
   opacity: 0;
 }
-.liked:hover {
+.menu__heart--liked:hover {
   opacity: 1;
-  background: linear-gradient(0deg, #9356DC 0%, #FF79DA 100%);
+  transition-duration: 0.5s;
+  background: -webkit-linear-gradient(0deg, #9356DC 10%, #FF79DA 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .menutitle {
