@@ -37,13 +37,11 @@ button:hover {
 
 .menu__heart {
   position: relative;
+  margin-right: 1em;
 }
 .menu__heart--notlike {
   position: absolute;
   color: grey;
-}
-.menu__heart--notlike:hover {
-  color: red;
 }
 .menu__heart--liked {
   z-index: 1;
@@ -89,6 +87,7 @@ button:hover {
   .menucard {
     display: flex;
     justify-content: space-between;
+    flex-flow: row wrap;
   }
   .menucard .card {
     width: 30%;
@@ -107,26 +106,34 @@ button:hover {
   animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
-}
-.card .accompaniment {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-weight: 400;
+}
+.card .accompaniment {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 90%;
 }
 .card h3 {
   margin: 0;
 }
 .card p {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-weight: 400;
 }
 .card span {
   font-weight: bold;
 }
 .card__confirmation {
   background-color: #99E2D0;
-  margin: -1rem -5rem -1rem 1rem;
-  width: 4rem;
+  margin: -1rem -6rem -1rem 1rem;
+  width: 5rem;
+  height: 4.5em;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -136,8 +143,8 @@ button:hover {
   margin-right: -1rem;
 }
 .card__wrapIcon {
-  height: 1.6rem;
-  width: 1.6rem;
+  height: 1.5rem;
+  width: 1.5rem;
   background-color: white;
   display: flex;
   align-items: center;
@@ -315,7 +322,7 @@ button:hover {
     width: 100%;
   }
   .restaurantmenu .menu {
-    width: 47%;
+    width: 48%;
     margin-right: 2em;
   }
 }
@@ -349,6 +356,7 @@ button:hover {
 .menu figcaption {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .title {
@@ -403,8 +411,7 @@ button:hover {
 }
 @media screen and (min-width: 1024px) {
   .footer__container {
-    width: 80%;
-    margin: auto;
+    text-align: center;
   }
 }
 

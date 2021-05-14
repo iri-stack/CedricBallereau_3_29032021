@@ -15,12 +15,10 @@
 
 .menu__heart {
   position: relative;
+  margin-right: 1em;
   &--notlike {
     position: absolute;
     color: grey;
-    &:hover{
-      color: red;
-    }
   }
   &--liked {
     z-index: 1;
@@ -68,6 +66,7 @@
     @media screen and (min-width: 1024px){
       display: flex;
       justify-content: space-between;
+      flex-flow: row wrap;
       .card{
         width: 30%;
       }
@@ -86,36 +85,44 @@
   animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
   animation-fill-mode: both;
   transform: scale(0);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   .accompaniment{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: 400;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 90%;
   }
   h3{
     margin: 0;
   }
   p{
     margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-weight: 400;
   }
   span{
     font-weight: bold;
   }
-  &__confirmation {
+  &__confirmation{
     background-color: $color-tertiaire;
-    margin: -1rem -5rem -1rem 1rem;
-    width: 4rem;
+    margin: -1rem -6rem -1rem 1rem;
+    width: 5rem;
+    height: 4.5em;
     display:flex;
     align-items:center;
     justify-content:center;
     transition-duration: 0.5s;
   }
-  &:hover &__confirmation {
+  &:hover &__confirmation{
     margin-right: -1rem;
   }
-  &__wrapIcon {
-    height: 1.6rem;
-    width: 1.6rem;
+  &__wrapIcon{
+    height: 1.5rem;
+    width: 1.5rem;
     background-color: white;
     display:flex;
     align-items:center;
@@ -124,10 +131,10 @@
     transform: rotate(180deg);
     transition-duration: 0.5s;
   }
-  &:hover &__wrapIcon {
+  &:hover &__wrapIcon{
     transform: rotate(0);
   }
-  &__icon {
+  &__icon{
     color: $color-tertiaire;
   }
 }

@@ -82,129 +82,130 @@
   
   /* section operation */
   
-  .operation{
-    width: 90%;
-    margin: auto;
-    h2{
-      padding-top: 1.1em;
-      font-size: 1.7em;
-    }
-    &__step{
-      margin: 0;
-      margin-bottom: 3em;
-      padding: 0;
-      list-style: none;
-      counter-reset: compteListe;
-      li{
-        background-color: #f5f1f1;
-        padding: 1.5rem;
-        margin: 1rem 0 1rem 0.75rem;
-        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
-        border-radius: 1.25rem;
-        display: flex;
-        position: relative;
-        &::before{
-          counter-increment: compteListe 1;
-          content: counter(compteListe) " ";
-          background: $color-primary;
-          height: 1.5rem;
-          width: 1.5rem;
-          border-radius: 100px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: white;
-          position: absolute;
-          left: -0.75rem; 
-        }
-        &:hover{
-          background-color: #efe8f7;
-          i{
-            color:#9356DC;
-          }
-        }
-      }
-      i{
-        padding-right: 1em;
-        color: grey;
-      }
-      @media screen and (min-width: 1024px) {
+.operation{
+  width: 90%;
+  margin: auto;
+  h2{
+    padding-top: 1.1em;
+    font-size: 1.7em;
+  }
+  &__step{
+    margin: 0;
+    margin-bottom: 3em;
+    padding: 0;
+    list-style: none;
+    counter-reset: compteListe;
+    li{
+      background-color: #f5f1f1;
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      display: flex;
+      position: relative;
+      &::before{
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        background: $color-primary;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
         display: flex;
         justify-content: center;
-        li{
-          margin-right: 2em;
-          width: 33%;
-        }  
+        align-items: center;
+        color: white;
+        position: absolute;
+        left: -0.75rem; 
+      }
+      &:hover{
+        background-color: #efe8f7;
+        i{
+         color:#9356DC;
+        }
       }
     }
-  }
-  
-  /* section restaurant */
-  
-  .restaurant{
-    background-color: #e6e6e6;
-    padding-bottom: 40px;
-  }
-  
-  .galerierestaurant{
-    width: 90%;
-    margin: auto;
-    h2{
-      padding: 2.1em 0 0.2em 0;
-      font-size: 1.7em;
+    i{
+      padding-right: 1em;
+      color: grey;
     }
-  }
-  
-  .restaurantmenu{
     @media screen and (min-width: 1024px) {
       display: flex;
-      flex-flow: wrap row;
-      width: 100%;
-      .menu{
-        width: 47%;
+      justify-content: center;
+      li{
         margin-right: 2em;
-      }
+        width: 33%;
+      }  
     }
   }
+}
   
-  .menu{
-    background-color: white;
-    border-radius: 1rem;
-    margin-bottom: 20px;
-    position: relative;
-    figure{
-      margin: 0;
-    }
-    img{
-      width: 100%;
-      height: 12rem;
-      object-fit: cover;
-      border-radius: 1rem 1rem 0 0;
-    }
-    span{
-      color: darken(#99E2D0, 35%);
-      background-color: #99E2D0;
-      padding: 0.5em;
-      font-size: 1.2em;
-      font-weight: 600;
-      position: absolute;
-      top: 1em;
-      right: 1em;
-      border-radius: 3%;
-    }
-    figcaption{
-      display: flex;
-      justify-content: space-between;
-    }
-  }
+/* section restaurant */
   
-  .title{
-    margin: 1em;
-    h3{
-      padding-bottom: 0.1em;
-      margin: 0;
-    }
-    p{
-      margin: 0;
+.restaurant{
+  background-color: #e6e6e6;
+  padding-bottom: 40px;
+}
+  
+.galerierestaurant{
+  width: 90%;
+  margin: auto;
+  h2{
+    padding: 2.1em 0 0.2em 0;
+    font-size: 1.7em;
+  }
+}
+  
+.restaurantmenu{
+  @media screen and (min-width: 1024px) {
+    display: flex;
+    flex-flow: wrap row;
+    width: 100%;
+    .menu{
+      width: 48%;
+      margin-right: 2em;
     }
   }
+}
+  
+.menu{
+  background-color: white;
+  border-radius: 1rem;
+  margin-bottom: 20px;
+  position: relative;
+  figure{
+    margin: 0;
+  }
+  img{
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 1rem 1rem 0 0;
+  }
+  span{
+    color: darken(#99E2D0, 35%);
+    background-color: #99E2D0;
+    padding: 0.5em;
+    font-size: 1.2em;
+    font-weight: 600;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    border-radius: 3%;
+  }
+  figcaption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+  
+.title{
+  margin: 1em;
+  h3{
+    padding-bottom: 0.1em;
+    margin: 0;
+  }
+  p{
+    margin: 0;
+  }
+}
