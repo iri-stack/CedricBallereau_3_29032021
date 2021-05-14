@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  &__container{
+  &__container {
     display: flex;
     justify-content: center;
   }
@@ -41,61 +41,61 @@
 /* header */
 
 .header {
-    margin: auto;
+  margin: auto;
+  padding: 1em;
+  text-align: center;
+  box-shadow: 0 0 0.5rem grey;
+  position: relative;
+}
+
+/* section exploration */
+
+.localisation {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  background-color: #f5f1f1;
+  &__place {
+    background-color: #e4e1e1;
+    color: #575454;
     padding: 1em;
-    text-align: center;
-    box-shadow: 0 0 0.5rem grey;
-    position: relative;
-  }
-  
-  /* section exploration */
-  
-  .exploration{
-    width: 100%;
-    text-align: center;
-    margin: auto;
-    background-color: #f5f1f1;
-    .localisation{
-      background-color: #e4e1e1;
-      color: #575454;
-      padding: 1em;
-      font-weight: 900;
-    }
-    i{
+    font-weight: 900;
+    i {
       padding-right: 1em;
     }
-    h1{
-      padding-top: 1em;
-      width: 65%;
-      margin: auto;
-      padding-bottom: 0.5em;
-      font-size: 1.5em;
-    }
-    p{
-      padding-bottom: 1em;
-      color: grey;
-      width: 85%;
-      margin: auto;
-      font-size: 1.2em;
-    }
   }
-  
-  /* section operation */
-  
-.operation{
+  h1 {
+    padding-top: 1em;
+    width: 65%;
+    margin: auto;
+    padding-bottom: 0.5em;
+    font-size: 1.5em;
+  }
+  p {
+    padding-bottom: 1em;
+    color: grey;
+    width: 85%;
+    margin: auto;
+    font-size: 1.2em;
+  }
+}
+
+/* section operation */
+
+.operation {
   width: 90%;
   margin: auto;
-  h2{
+  h2 {
     padding-top: 1.1em;
     font-size: 1.7em;
   }
-  &__step{
+  &__step {
     margin: 0;
     margin-bottom: 3em;
     padding: 0;
     list-style: none;
     counter-reset: compteListe;
-    li{
+    li {
       background-color: #f5f1f1;
       padding: 1.5rem;
       margin: 1rem 0 1rem 0.75rem;
@@ -103,7 +103,7 @@
       border-radius: 1.25rem;
       display: flex;
       position: relative;
-      &::before{
+      &::before {
         counter-increment: compteListe 1;
         content: counter(compteListe) " ";
         background: $color-primary;
@@ -115,75 +115,75 @@
         align-items: center;
         color: white;
         position: absolute;
-        left: -0.75rem; 
+        left: -0.75rem;
       }
-      &:hover{
+      &:hover {
         background-color: #efe8f7;
-        i{
-         color:#9356DC;
+        i {
+          color: #9356dc;
         }
       }
     }
-    i{
+    i {
       padding-right: 1em;
       color: grey;
     }
     @media screen and (min-width: 1024px) {
       display: flex;
       justify-content: center;
-      li{
+      li {
         margin-right: 2em;
         width: 33%;
-      }  
+      }
     }
   }
 }
-  
+
 /* section restaurant */
-  
-.restaurant{
+
+.restaurant {
   background-color: #e6e6e6;
   padding-bottom: 40px;
 }
-  
-.galerierestaurant{
+
+.galerierestaurant {
   width: 90%;
   margin: auto;
-  h2{
+  h2 {
     padding: 2.1em 0 0.2em 0;
     font-size: 1.7em;
   }
 }
-  
-.restaurantmenu{
+
+.restaurantmenu {
   @media screen and (min-width: 1024px) {
     display: flex;
     flex-flow: wrap row;
     width: 100%;
-    .menu{
+    .menu {
       width: 48%;
       margin-right: 2em;
     }
   }
 }
-  
-.menu{
+
+.menu {
   background-color: white;
   border-radius: 1rem;
   margin-bottom: 20px;
   position: relative;
-  figure{
+  figure {
     margin: 0;
   }
-  img{
+  img {
     width: 100%;
     height: 12rem;
     object-fit: cover;
     border-radius: 1rem 1rem 0 0;
   }
-  span{
-    color: darken(#99E2D0, 35%);
-    background-color: #99E2D0;
+  span {
+    color: darken(#99e2d0, 35%);
+    background-color: #99e2d0;
     padding: 0.5em;
     font-size: 1.2em;
     font-weight: 600;
@@ -192,20 +192,20 @@
     right: 1em;
     border-radius: 3%;
   }
-  figcaption{
+  figcaption {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 }
-  
-.title{
+
+.title {
   margin: 1em;
-  h3{
+  h3 {
     padding-bottom: 0.1em;
     margin: 0;
   }
-  p{
+  p {
     margin: 0;
   }
 }

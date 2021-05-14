@@ -35,26 +35,6 @@ button:hover {
   height: 15rem;
 }
 
-.menu__heart {
-  position: relative;
-  margin-right: 1em;
-}
-.menu__heart--notlike {
-  position: absolute;
-  color: grey;
-}
-.menu__heart--liked {
-  z-index: 1;
-  opacity: 0;
-}
-.menu__heart--liked:hover {
-  opacity: 1;
-  transition-duration: 0.5s;
-  background: -webkit-linear-gradient(0deg, #9356DC 10%, #FF79DA 90%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .menutitle {
   width: 90%;
   margin: auto;
@@ -103,7 +83,6 @@ button:hover {
   overflow: hidden;
   cursor: pointer;
   animation: itemAppear 1.5s;
-  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
   animation-fill-mode: both;
   transform: scale(0);
   display: flex;
@@ -118,6 +97,9 @@ button:hover {
 }
 .card h3 {
   margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .card p {
   margin: 0;
@@ -210,29 +192,29 @@ button:hover {
 }
 
 /* section exploration */
-.exploration {
+.localisation {
   width: 100%;
   text-align: center;
   margin: auto;
   background-color: #f5f1f1;
 }
-.exploration .localisation {
+.localisation__place {
   background-color: #e4e1e1;
   color: #575454;
   padding: 1em;
   font-weight: 900;
 }
-.exploration i {
+.localisation__place i {
   padding-right: 1em;
 }
-.exploration h1 {
+.localisation h1 {
   padding-top: 1em;
   width: 65%;
   margin: auto;
   padding-bottom: 0.5em;
   font-size: 1.5em;
 }
-.exploration p {
+.localisation p {
   padding-bottom: 1em;
   color: grey;
   width: 85%;
@@ -283,7 +265,7 @@ button:hover {
   background-color: #efe8f7;
 }
 .operation__step li:hover i {
-  color: #9356DC;
+  color: #9356dc;
 }
 .operation__step i {
   padding-right: 1em;
@@ -344,7 +326,7 @@ button:hover {
 }
 .menu span {
   color: #2c9c81;
-  background-color: #99E2D0;
+  background-color: #99e2d0;
   padding: 0.5em;
   font-size: 1.2em;
   font-weight: 600;
@@ -385,32 +367,52 @@ button:hover {
   }
 }
 
+.menu__heart {
+  position: relative;
+  margin-right: 1em;
+}
+.menu__heart--notlike {
+  position: absolute;
+  color: grey;
+}
+.menu__heart--liked {
+  z-index: 1;
+  opacity: 0;
+}
+.menu__heart--liked:hover {
+  opacity: 1;
+  transition-duration: 0.5s;
+  background: -webkit-linear-gradient(0deg, #9356DC 10%, #FF79DA 90%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* footer */
 .footer {
   background-color: #353535;
 }
-
 .footer__container {
   color: white;
   width: 90%;
   margin: auto;
 }
-.footer__container .footerlogo {
+.footer__logo {
   font-family: "shrikhand";
   padding-top: 0.5em;
 }
-.footer__container .footerlist {
+.footer__list {
   list-style: none;
   margin: 0;
   padding: 0 0 3em 0;
 }
-.footer__container .footerlist li {
+.footer__list li {
   padding-bottom: 0.5em;
 }
-.footer__container .footerlist i {
+.footer__list i {
   padding-right: 1em;
 }
 @media screen and (min-width: 1024px) {
-  .footer__container {
+  .footer {
     text-align: center;
   }
 }
